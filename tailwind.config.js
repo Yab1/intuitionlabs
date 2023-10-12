@@ -7,6 +7,7 @@ export default {
         "intense-red": "#E61428",
         "dark-gray": "#333333",
         "light-gray": "#DDDDDD",
+        "light-silver": "#FAFAFA",
       },
       fontFamily: {
         "gothic-a1": ["Gothic A1", "sans-serif"],
