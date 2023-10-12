@@ -3,12 +3,12 @@ import HeroCover from "@/assets/home_page/alex-perez-pEgsWN0kwbQ-unsplash 1.svg"
 
 function Hero() {
   return (
-    <section className="min-h-[702px] mb-32 flex flex-col">
+    <section className="min-h-[702px] mb-24 flex flex-col">
       <h1 className="font-noto-serif-jp font-light text-[42px] text-dark-gray mb-5">
         We empower businesses to become fully AI enabled.
       </h1>
 
-      <HorizontalLine color={"dark-gray"} />
+      <HorizontalLine style={"bg-dark-gray"} />
 
       <div className="relative my-3">
         <img
@@ -24,7 +24,7 @@ function Hero() {
         </div>
       </div>
 
-      <HorizontalLine color={"dark-gray"} />
+      <HorizontalLine style={"bg-dark-gray"} />
 
       <p className="text-dark-gray font-gothic-a1 text-[14px] mt-9 mb-5">
         Don't let your business fall behind. Leverage the power of AI to improve
