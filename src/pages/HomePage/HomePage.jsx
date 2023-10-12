@@ -1,12 +1,10 @@
-import { NavBar } from "@/widgets";
+import { Hero } from "@/pages/HomePage/Sections";
 
 function HomePage() {
   return (
-    <section>
-      <header>
-        <NavBar />
-      </header>
-    </section>
+    <main className="px-5">
+      <Hero />
+    </main>
   );
 }
 
