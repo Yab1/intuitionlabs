@@ -1,9 +1,10 @@
-import { Hero } from "@/pages/HomePage/Sections";
+import { Hero, Offerings } from "@/pages/HomePage/Sections";
 
 function HomePage() {
   return (
     <main className="px-5">
       <Hero />
+      <Offerings />
     </main>
   );
 }
