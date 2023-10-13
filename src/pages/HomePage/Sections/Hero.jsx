@@ -10,19 +10,17 @@ function Hero() {
 
       <HorizontalLine style={"bg-dark-gray"} />
 
-      <div className="relative my-3">
+      <figure className="relative my-3">
         <img
           src={HeroCover}
           alt="Image Made with Stable Diffusion and a prompt from Kenny Schumacher"
           className="rounded-md"
         />
 
-        <div className="absolute left-0 right-0 bottom-0 bg-dark-gray opacity-80 h-[68px] px-5 grid content-center rounded-b-md">
-          <p className="text-white font-gothic-a1 text-xs">
-            Made with Stable Diffusion and a prompt from Kenny Schumacher
-          </p>
-        </div>
-      </div>
+        <figcaption className="text-white font-gothic-a1 text-xs absolute left-0 right-0 bottom-0 bg-dark-gray opacity-80 h-[68px] px-5 grid content-center rounded-b-md">
+          Made with Stable Diffusion and a prompt from Kenny Schumacher
+        </figcaption>
+      </figure>
 
       <HorizontalLine style={"bg-dark-gray"} />
 
