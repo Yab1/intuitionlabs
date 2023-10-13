@@ -8,6 +8,7 @@ export default {
         "dark-gray": "#333333",
         "light-gray": "#DDDDDD",
         "light-silver": "#FAFAFA",
+        "muted-gray ": "#828282",
       },
       fontFamily: {
         "gothic-a1": ["Gothic A1", "sans-serif"],
