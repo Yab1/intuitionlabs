@@ -1,21 +1,20 @@
-import { HorizontalLine, Button } from "@/atom";
-import HeroCover from "@/assets/home_page/alex-perez-pEgsWN0kwbQ-unsplash 1.svg";
+import { Button, HorizontalLine, Typography } from "@/atom";
+import { Image_Info } from "@/utility";
 
 function Hero() {
+  const { src, alt } = Image_Info.HomePage.hero;
+
   return (
     <section className="min-h-[702px] mb-24 flex flex-col">
-      <h1 className="font-noto-serif-jp font-light text-[42px] text-dark-gray mb-5">
-        We empower businesses to become fully AI enabled.
-      </h1>
+      <Typography
+        innerText={"We empower businesses to become fully AI enabled."}
+        style={"text-[42px] mb-5"}
+      />
 
       <HorizontalLine style={"bg-dark-gray"} />
 
       <figure className="relative my-3">
-        <img
-          src={HeroCover}
-          alt="Image Made with Stable Diffusion and a prompt from Kenny Schumacher"
-          className="rounded-md"
-        />
+        <img src={src} alt={alt} className="rounded-md" />
 
         <figcaption className="text-white font-gothic-a1 text-xs absolute left-0 right-0 bottom-0 bg-dark-gray opacity-80 h-[68px] px-5 grid content-center rounded-b-md">
           Made with Stable Diffusion and a prompt from Kenny Schumacher

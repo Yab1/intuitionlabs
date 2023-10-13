@@ -1,23 +1,27 @@
 import { Fragment } from "react";
-import { HorizontalLine, Button } from "@/atom";
+import { Button, HorizontalLine, Typography } from "@/atom";
 import { Image_Info } from "@/utility";
 
 function Offerings() {
-  const renderServices = Image_Info.Header.offerings.map(({ id, src, alt }) => (
-    <Fragment key={id}>
-      <div className="h-[78px] w-full bg-light-silver grid place-content-center">
-        <img src={src} alt={alt} />
-      </div>
+  const renderServices = Image_Info.HomePage.offerings.map(
+    ({ id, src, alt }) => (
+      <Fragment key={id}>
+        <figure className="h-[78px] w-full bg-light-silver grid place-content-center">
+          <img src={src} alt={alt} />
+        </figure>
 
-      <HorizontalLine style={"bg-dark-gray my-3"} />
-    </Fragment>
-  ));
+        <HorizontalLine style={"bg-dark-gray my-3"} />
+      </Fragment>
+    )
+  );
 
   return (
     <section className="min-h-[647px] mb-24">
-      <h1 className="font-noto-serif-jp font-light text-[38px] text-dark-gray mb-12">
-        We help brands like yours stay competitive through AI.
-      </h1>
+      <Typography
+        innerText={"We help brands like yours stay competitive through AI."}
+        style={"text-[38px] mb-12"}
+      />
+
       <HorizontalLine style={"bg-dark-gray my-3"} />
 
       {renderServices}
