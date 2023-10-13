@@ -5,13 +5,13 @@ function Hero() {
   const { src, alt } = Image_Info.HomePage.hero;
 
   return (
-    <section className="min-h-[702px] mb-24 flex flex-col">
+    <section className="min-h-[702px] mb-24 flex flex-col px-5">
       <Typography
         innerText={"We empower businesses to become fully AI enabled."}
         style={"text-[42px] mb-5"}
       />
 
-      <HorizontalLine style={"bg-dark-gray"} />
+      <HorizontalLine />
 
       <figure className="relative my-3">
         <img src={src} alt={alt} className="rounded-md" />
@@ -21,7 +21,7 @@ function Hero() {
         </figcaption>
       </figure>
 
-      <HorizontalLine style={"bg-dark-gray"} />
+      <HorizontalLine />
 
       <p className="text-dark-gray font-gothic-a1 text-[14px] mt-9 mb-5">
         Don't let your business fall behind. Leverage the power of AI to improve

@@ -16,19 +16,19 @@ function Offerings() {
   );
 
   return (
-    <section className="min-h-[647px] mb-24">
+    <section className="min-h-[647px] px-5 mb-24">
       <Typography
         innerText={"We help brands like yours stay competitive through AI."}
         style={"text-[38px] mb-12"}
       />
 
-      <HorizontalLine style={"bg-dark-gray my-3"} />
+      <HorizontalLine style={"my-3"} />
 
       {renderServices}
 
       <Button innerText={"Work with us"} style={"h-10 px-5 pt-10 pb-5"} />
 
-      <HorizontalLine style={"bg-dark-gray my-3"} />
+      <HorizontalLine style={"my-3"} />
     </section>
   );
 }
