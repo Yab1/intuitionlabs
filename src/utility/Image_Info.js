@@ -4,7 +4,7 @@ import Shimadzu from "@/assets/home_page/shimadzu.svg";
 import AWS from "@/assets/home_page/aws.svg";
 
 const Image_Info = {
-  Header: {
+  HomePage: {
     hero: {
       src: HeroCover,
       alt: "Image Made with Stable Diffusion and a prompt from Kenny Schumacher",
